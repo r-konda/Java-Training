@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+//Here We Are Write The Function for Radio Butttons To Select The Menus
+	function checkButton() {
+
+		if (document.getElementById('menu1').checked == true) {
+			name = location.href = 'morningmenu.jsp';
+		} else if (document.getElementById('menu2').checked == true) {
+			name = location.href = 'lunchmenu.jsp';
+		} else if (document.getElementById('menu3').checked == true) {
+			name = location.href = 'dinnermenu.jsp';
+		} else {
+			document.write("Something wrong");
+			
+		}
+	}
+</script>
+<title>Taxilla Restraunent</title>
+</head>
+<body>
+
+    <!--Here We Are Display The Content With Different Color On Browser -->
+    <h3 style="color: Tomato">Choose Below Menu List</h3>
+	<input type="radio" id="menu1" name="one" value="MorningMenu" />Morning
+	Menu
+	<br />
+	<input type="radio" id="menu2" name="one" value="LunchMenu" />Lunch
+	Menu
+	<br />
+	<input type="radio" id="menu3" name="one" value="DinnerMenu" />Dinner
+	Menu
+	<br />
+	<!-- Here We Are Call The Java Script Function -->
+	<button type="button" onclick="checkButton()">Submit</button>
+	<h4 style="color: Tomato">For Re-Login Please Click On Below
+		Button</h4>
+	   <tr>
+		<td colspan=2><button class=\"btn\">
+				<a href="castumor.html" /a>Customer Page 
+			</button></td>
+			</tr>
+		
+	
+</body>
+</html>

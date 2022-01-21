@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>RestraurentApplication</display-name>
+     <welcome-file-list>
+  <welcome-file>castumor.html</welcome-file>
+  </welcome-file-list>
+   <welcome-file-list>
+  <welcome-file>home.html</welcome-file>
+  </welcome-file-list>
+  <welcome-file-list>
+  <welcome-file>morningMenu.html</welcome-file>
+  </welcome-file-list>
+  <welcome-file-list>
+  <welcome-file>lunchMenu.html</welcome-file>
+  </welcome-file-list>
+  <welcome-file-list>
+  <welcome-file>dinnerMenu.html</welcome-file>
+  </welcome-file-list>
+   <servlet>
+		<servlet-name>MorningMenu</servlet-name>
+		<servlet-class>com.taxilla.servlet.MorningMenu</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MorningMenu</servlet-name>
+		<url-pattern>/MorningMenu</url-pattern>
+		</servlet-mapping>
+		
+		<servlet-mapping>
+		<servlet-name>Register</servlet-name>
+		<url-pattern>/Register</url-pattern>
+		</servlet-mapping>
+		
+		 <servlet>
+		<servlet-name>Register</servlet-name>
+		<servlet-class>com.taxilla.servlet.Register</servlet-class>
+	</servlet>
+		
+	 <servlet>
+		<servlet-name>LunchMenu</servlet-name>
+		<servlet-class>com.taxilla.servlet.LunchMenu</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LunchMenu</servlet-name>
+		<url-pattern>/LunchMenu</url-pattern>
+		</servlet-mapping>	
+		<servlet>
+		<servlet-name>DinnerMenu</servlet-name>
+		<servlet-class>com.taxilla.servlet.DinnerMenu</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DinnerMenu</servlet-name>
+		<url-pattern>/DinnerMenu</url-pattern>
+		</servlet-mapping>
+		<servlet>
+		<servlet-name>HomePage</servlet-name>
+		<servlet-class>com.taxilla.servlet.HomePage</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>HomePage</servlet-name>
+		<url-pattern>/HomePage</url-pattern>
+		</servlet-mapping>
+		<servlet>
+		<servlet-name>Fetch</servlet-name>
+		<servlet-class>com.taxilla.servlet.Fetch</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Fetch</servlet-name>
+		<url-pattern>/Fetch</url-pattern>
+		</servlet-mapping>
+		
+		
+		
+		</web-app>	
+		
